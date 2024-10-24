@@ -1,0 +1,34 @@
+2024-10-24 11:50:56,127 [ERROR] Error minting NFT: Configuration file not found: config.json
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 38, in load_config
+    with open(config_path, 'r') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 105, in mint_nft
+    config = load_config(config_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 64, in load_config
+    raise FileNotFoundError(f"Configuration file not found: {config_path}")
+FileNotFoundError: Configuration file not found: config.json
+2024-10-24 11:50:56,127 [ERROR] NFT minting process failed
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 38, in load_config
+    with open(config_path, 'r') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 194, in <module>
+    mint_nft(config_path)
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 105, in mint_nft
+    config = load_config(config_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 64, in load_config
+    raise FileNotFoundError(f"Configuration file not found: {config_path}")
+FileNotFoundError: Configuration file not found: config.json

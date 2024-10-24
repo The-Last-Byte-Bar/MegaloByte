@@ -1,0 +1,58 @@
+2024-10-24 11:51:00,557 [INFO] Starting NFT minting process with configuration:
+2024-10-24 11:51:00,557 [INFO] Network Type: mainnet
+2024-10-24 11:51:00,557 [INFO] Explorer URL: https://api.ergoplatform.com/api/v1
+2024-10-24 11:51:00,557 [INFO] Sender Address: your_wallet_address
+2024-10-24 11:51:00,557 [INFO] NFT Name: Your NFT Name
+2024-10-24 11:51:00,557 [INFO] NFT Description: Your NFT Description
+2024-10-24 11:51:00,557 [INFO] NFT Edition: Edition #1
+2024-10-24 11:51:00,557 [INFO] Collection Name: Collection Name
+2024-10-24 11:51:00,557 [INFO] Collection Family: Collection Family
+2024-10-24 11:51:00,557 [INFO] IPFS URL: ipfs://your_ipfs_hash/your_filename
+2024-10-24 11:51:00,557 [INFO] Minimum Box Value: 0.005000000 ERG
+2024-10-24 11:51:00,557 [INFO] Initializing ErgoAppKit...
+2024-10-24 11:51:00,683 [INFO] ErgoAppKit initialized successfully
+2024-10-24 11:51:00,684 [INFO] Total ERG needed: 0.006000000 ERG
+2024-10-24 11:51:00,788 [ERROR] Error minting NFT: org.ergoplatform.appkit.ErgoClientException: Error executing API request to http://your.node.url:9053/info: your.node.url: Name or service not known
+Traceback (most recent call last):
+  File "RestApiErgoClient.java", line 67, in org.ergoplatform.appkit.RestApiErgoClient.execute
+java.net.java.net.UnknownHostException: java.net.UnknownHostException: your.node.url: Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "RestApiErgoClient.java", line 67, in org.ergoplatform.appkit.RestApiErgoClient.execute
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 125, in mint_nft
+    unspent_boxes = ergo.boxesToSpend(config['wallet']['address'], total_erg_needed)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/whaleshark/miniconda3/envs/pool/lib/python3.12/site-packages/ergo_python_appkit/appkit.py", line 174, in boxesToSpend
+    return list(self._ergoClient.execute(ErgoAppKit.BoxesToSpendFromListExecutor([address],nergToSpend,tokensToSpend,includeMempool)))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+org.ergoplatform.appkit.org.ergoplatform.appkit.ErgoClientException: org.ergoplatform.appkit.ErgoClientException: Error executing API request to http://your.node.url:9053/info: your.node.url: Name or service not known
+2024-10-24 11:51:00,789 [ERROR] NFT minting process failed
+Traceback (most recent call last):
+  File "RestApiErgoClient.java", line 67, in org.ergoplatform.appkit.RestApiErgoClient.execute
+java.net.java.net.UnknownHostException: java.net.UnknownHostException: your.node.url: Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "RestApiErgoClient.java", line 67, in org.ergoplatform.appkit.RestApiErgoClient.execute
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 194, in <module>
+    mint_nft(config_path)
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 125, in mint_nft
+    unspent_boxes = ergo.boxesToSpend(config['wallet']['address'], total_erg_needed)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/whaleshark/miniconda3/envs/pool/lib/python3.12/site-packages/ergo_python_appkit/appkit.py", line 174, in boxesToSpend
+    return list(self._ergoClient.execute(ErgoAppKit.BoxesToSpendFromListExecutor([address],nergToSpend,tokensToSpend,includeMempool)))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+org.ergoplatform.appkit.org.ergoplatform.appkit.ErgoClientException: org.ergoplatform.appkit.ErgoClientException: Error executing API request to http://your.node.url:9053/info: your.node.url: Name or service not known

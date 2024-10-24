@@ -1,0 +1,35 @@
+2024-10-24 11:53:31,179 [INFO] Starting NFT minting process with configuration:
+2024-10-24 11:53:31,179 [INFO] Network Type: testnet
+2024-10-24 11:53:31,179 [INFO] Explorer URL: https://api-testnet.ergoplatform.com/
+2024-10-24 11:53:31,179 [INFO] Sender Address: 3WyZiupQXRBQKrUz7UwKTQTc6kxz1FkzM7zUazKDTQo1xbpJdmoe
+2024-10-24 11:53:31,179 [INFO] NFT Name: Mining Rights Protocol NFT
+2024-10-24 11:53:31,179 [INFO] NFT Description: First ever Mining Rights Protocol (MRP) NFT, created during ErgoHack 9. This NFT represents the genesis logo for the Mining Rights Protocol - a groundbreaking system that introduces a mineral rights-like framework to cryptocurrency mining.
+2024-10-24 11:53:31,180 [INFO] NFT Edition: 1 of 1
+2024-10-24 11:53:31,180 [INFO] Collection Name: Mining Rights Protocol Official
+2024-10-24 11:53:31,180 [INFO] Collection Family: Genesis NFTs
+2024-10-24 11:53:31,180 [INFO] IPFS URL: ipfs://bafybeiekl4phoffq3eob2ulip7d33n5r2sxhsofx3k444krlmzn5nsisxm/asset.svg
+2024-10-24 11:53:31,180 [INFO] Minimum Box Value: 0.005000000 ERG
+2024-10-24 11:53:31,180 [INFO] Initializing ErgoAppKit...
+2024-10-24 11:53:31,306 [INFO] ErgoAppKit initialized successfully
+2024-10-24 11:53:31,306 [INFO] Total ERG needed: 0.006000000 ERG
+2024-10-24 11:53:37,264 [INFO] Token ID will be: b3b62b65b8528958a822462cd9638d58e3e79614bf928f82b199c250ce095ce4
+2024-10-24 11:53:37,264 [ERROR] Error minting NFT: [Errno 2] No such file or directory: 'asset.svg'
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 130, in mint_nft
+    image_hash = calculate_image_hash('asset.svg')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 72, in calculate_image_hash
+    with open(filepath, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'asset.svg'
+2024-10-24 11:53:37,264 [ERROR] NFT minting process failed
+Traceback (most recent call last):
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 194, in <module>
+    mint_nft(config_path)
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 130, in mint_nft
+    image_hash = calculate_image_hash('asset.svg')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/whaleshark/Documents/ergo/MegaloByte/mint_nft.py", line 72, in calculate_image_hash
+    with open(filepath, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'asset.svg'

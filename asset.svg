@@ -1,0 +1,56 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="150" fill="#1a0033"/>
+  
+  <!-- Grid lines -->
+  <g stroke="#2d1f47" stroke-width="0.5">
+    <line x1="50" y1="150" x2="250" y2="150"/>
+    <line x1="150" y1="50" x2="150" y2="250"/>
+    <path d="M75,75 L225,225 M225,75 L75,225" />
+  </g>
+  
+  <!-- Outer triangle with glow -->
+  <path d="M150,70 L240,200 L60,200 Z" 
+        fill="none" 
+        stroke="#ff1493" 
+        stroke-width="3">
+    <animate attributeName="opacity" 
+             values="0.5;1;0.5" 
+             dur="3s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Middle triangle -->
+  <path d="M150,90 L215,190 L85,190 Z" 
+        fill="none" 
+        stroke="#ff1493" 
+        stroke-width="2"/>
+  
+  <!-- Inner triangle with cyan glow -->
+  <path d="M150,110 L190,180 L110,180 Z" 
+        fill="none" 
+        stroke="#00ffff" 
+        stroke-width="2">
+    <animate attributeName="opacity" 
+             values="1;0.7;1" 
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Center dot -->
+  <circle cx="150" cy="150" r="3" fill="#00ffff"/>
+  
+  <!-- Text elements -->
+  <text x="150" y="230" 
+        fill="#00ffff" 
+        font-family="Arial, sans-serif" 
+        font-size="24" 
+        text-anchor="middle" 
+        font-weight="bold">MRP</text>
+  
+  <text x="150" y="250" 
+        fill="#ff1493" 
+        font-family="Arial, sans-serif" 
+        font-size="12" 
+        text-anchor="middle">MINING RIGHTS PROTOCOL</text>
+</svg>

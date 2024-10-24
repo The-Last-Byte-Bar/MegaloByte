@@ -1,0 +1,32 @@
+{
+    "node": {
+        "url": "http://37.27.198.175:9052/",
+        "apiKey": "hello",
+        "network": "testnet"
+    },
+    "explorer": {
+        "url": "https://api-testnet.ergoplatform.com/"
+    },
+    "wallet": {
+        "address": "3WyZiupQXRBQKrUz7UwKTQTc6kxz1FkzM7zUazKDTQo1xbpJdmoe"
+    },
+    "nft": {
+        "name": "Mining Rights Protocol NFT",
+        "description": "First ever Mining Rights Protocol (MRP) NFT, created during ErgoHack 9. This NFT represents the genesis logo for the Mining Rights Protocol - a groundbreaking system that introduces a mineral rights-like framework to cryptocurrency mining.",
+        "decimals": 0,
+        "edition": "1 of 1",
+        "event": "ErgoHack 9",
+        "date": "October 2024",
+        "creator": "Mining Rights Protocol Team",
+        "project": "Mining Rights Protocol",
+        "collectionName": "Mining Rights Protocol Official",
+        "collectionFamily": "Genesis NFTs"
+    },
+    "ipfs": {
+        "hash": "bafybeiekl4phoffq3eob2ulip7d33n5r2sxhsofx3k444krlmzn5nsisxm",
+        "filename": "asset.svg"
+    },
+    "box": {
+        "minValue": 5000000
+    }
+}

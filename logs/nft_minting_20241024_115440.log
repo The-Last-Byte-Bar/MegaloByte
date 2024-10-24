@@ -1,0 +1,27 @@
+2024-10-24 11:54:40,193 [INFO] Starting NFT minting process with configuration:
+2024-10-24 11:54:40,193 [INFO] Network Type: testnet
+2024-10-24 11:54:40,193 [INFO] Explorer URL: https://api-testnet.ergoplatform.com/
+2024-10-24 11:54:40,194 [INFO] Sender Address: 3WyZiupQXRBQKrUz7UwKTQTc6kxz1FkzM7zUazKDTQo1xbpJdmoe
+2024-10-24 11:54:40,194 [INFO] NFT Name: Mining Rights Protocol NFT
+2024-10-24 11:54:40,194 [INFO] NFT Description: First ever Mining Rights Protocol (MRP) NFT, created during ErgoHack 9. This NFT represents the genesis logo for the Mining Rights Protocol - a groundbreaking system that introduces a mineral rights-like framework to cryptocurrency mining.
+2024-10-24 11:54:40,194 [INFO] NFT Edition: 1 of 1
+2024-10-24 11:54:40,194 [INFO] Collection Name: Mining Rights Protocol Official
+2024-10-24 11:54:40,194 [INFO] Collection Family: Genesis NFTs
+2024-10-24 11:54:40,194 [INFO] IPFS URL: ipfs://bafybeiekl4phoffq3eob2ulip7d33n5r2sxhsofx3k444krlmzn5nsisxm/asset.svg
+2024-10-24 11:54:40,194 [INFO] Minimum Box Value: 0.005000000 ERG
+2024-10-24 11:54:40,194 [INFO] Initializing ErgoAppKit...
+2024-10-24 11:54:40,320 [INFO] ErgoAppKit initialized successfully
+2024-10-24 11:54:40,320 [INFO] Total ERG needed: 0.006000000 ERG
+2024-10-24 11:54:46,374 [INFO] Token ID will be: b3b62b65b8528958a822462cd9638d58e3e79614bf928f82b199c250ce095ce4
+2024-10-24 11:54:46,375 [INFO] Calculated image hash successfully
+2024-10-24 11:54:46,375 [INFO] Using IPFS URL: ipfs://bafybeiekl4phoffq3eob2ulip7d33n5r2sxhsofx3k444krlmzn5nsisxm/asset.svg
+2024-10-24 11:54:46,375 [INFO] Creating NFT registers...
+2024-10-24 11:54:46,377 [INFO] NFT registers created successfully
+2024-10-24 11:54:46,934 [INFO] Building unsigned transaction...
+2024-10-24 11:54:47,615 [INFO] Signing transaction with node wallet...
+2024-10-24 11:54:48,596 [INFO] Submitting transaction to network...
+2024-10-24 11:54:49,207 [INFO] NFT minted successfully!
+2024-10-24 11:54:49,207 [INFO] Transaction ID: "63b8d058ce98528077deb4c8e915573080bb106394d093745c307d83c41bf133"
+2024-10-24 11:54:49,207 [INFO] Token ID: b3b62b65b8528958a822462cd9638d58e3e79614bf928f82b199c250ce095ce4
+2024-10-24 11:54:49,207 [INFO] Transaction explorer link: https://api-testnet.ergoplatform.com//transactions/"63b8d058ce98528077deb4c8e915573080bb106394d093745c307d83c41bf133"
+2024-10-24 11:54:49,207 [INFO] Token explorer link: https://api-testnet.ergoplatform.com//tokens/b3b62b65b8528958a822462cd9638d58e3e79614bf928f82b199c250ce095ce4
